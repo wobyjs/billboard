@@ -1,0 +1,50 @@
+{
+    "name": "woby-billboard",
+    "version": "1.0.0",
+    "description": "Chart using billboard.js with Voby",
+    "main": "./dist/index.cjs.js",
+    "module": "./dist/index.es.js",
+    "browser": "./dist/index.umd.js",
+    "types": "./dist/types/index.d.ts",
+    "scripts": {
+        "//build": "vite build",
+        "//build:watch": "vite build --watch",
+        "//dev": "vite --force --mode dev --host",
+        "//prod": "vite --force",
+        "css:watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+        "css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+        "declaration": "tsc --build --force --declaration --emitDeclarationOnly --verbose",
+        "declaration:watch": "tsc --build --force --declaration --emitDeclarationOnly --verbose --watch",
+        "watch": "run-p build:watch css:watch",
+        "build": "run-s build:vite declaration",
+        "build:web": "vite build --config=vite.config.web.mts --force --mode production",
+        "web": "vite preview --config=vite.config.web.mts --host",
+        "dev:only": "vite --config=vite.config.web.mts --force --mode dev --host",
+        "dev": "run-p dev:only",
+        "build:vite": "vite build",
+        "build:watch": "vite build --watch",
+        "preview": "vite preview --host"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "keywords": [
+        "jasmine",
+        "mock",
+        "woby"
+    ],
+    "author": "Tan Jee Han",
+    "license": "MIT",
+    "devDependencies": {
+        "@rollup/plugin-alias": "^5.1.0",
+        "autoprefixer": "^10.4.18",
+        "tailwindcss": "^3.4.1",
+        "vite": "^5.1.5",
+        "vite-plugin-dts": "^3.7.3"
+    },
+    "peerDependencies": {
+        "billboard.js": "^3.10.2",
+        "woby": "workspace:^"
+    }
+}

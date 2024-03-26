@@ -1,0 +1,68 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "alwaysStrict": true,
+        "declaration": true,
+        "disableSizeLimit": true,
+        "esModuleInterop": false,
+        "forceConsistentCasingInFileNames": true,
+        "inlineSourceMap": false,
+        "inlineSources": false,
+        // "isolatedModules": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "woby",
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "module": "es2020",
+        "moduleResolution": "node",
+        "newLine": "lf",
+        "noEmitOnError": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": false,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noPropertyAccessFromIndexSignature": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "outDir": "./dist/",
+        "pretty": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "sourceMap": false,
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": false,
+        "target": "es2020",
+        "useDefineForClassFields": false,
+        "useUnknownInCatchVariables": true,
+        "noImplicitAny": true,
+        "noUncheckedIndexedAccess": false,
+        "baseUrl": ".",
+        "rootDir": "./",
+        "composite": true,
+        // "paths": {
+        //     "woby/jsx-runtime": [
+        //         "../../../woby/dist/jsx"
+        //     ],
+        //     "woby/jsx-runtime/*": [
+        //         "../../../woby/dist/jsx/*"
+        //     ],
+        // }
+    },
+    "exclude": [
+        "node_modules/*",
+        "*.test.ts*",
+        "vite.*.mts",
+        "vite.config.*.ts",
+        "demo/**"
+    ]
+    // "include": [
+    //   "../woby/src/jsx"
+    // ]
+}

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import path from 'path'
+import tsconfig from 'vite-plugin-tsconfig'
 // import dts from 'vite-plugin-dts'
 
 const config = defineConfig({
@@ -8,7 +9,7 @@ const config = defineConfig({
         lib: {
             entry: ["./index.html"],
             name: "woby-billboard",
-            formats: ['cjs', 'es', 'umd'],
+            formats: [/*'cjs', '*/'es'/*, 'umd'*/],
             fileName: (format: string, entryName: string) => `${entryName}.${format}.js`
         },
         outDir: './build',
@@ -19,6 +20,7 @@ const config = defineConfig({
     },
     plugins: [
         // dts({ entryRoot: './src', outDir: './dist/types' })
+        tsconfig({filename:'tsconfig.web.json'})
     ],
     resolve: {
         alias: {

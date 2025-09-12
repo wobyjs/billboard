@@ -3,7 +3,7 @@ import type { bb, Chart, ChartOptions } from "billboard.js"
 
 export { ChartOptions as IChartOptions }
 
-export interface IProp extends Pick<JSX.VoidHTMLAttributes<HTMLDivElement>, "className" | "style"> {
+export interface IProp extends Pick<JSX.VoidHTMLAttributes<HTMLDivElement>, "class" | "style"> {
     bb: typeof bb
     options: ObservableMaybe<ChartOptions>
     chartRef: JSX.Ref

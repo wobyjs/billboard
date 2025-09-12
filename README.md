@@ -1,4 +1,4 @@
-# @woby-chart
+# @woby/billboard
 
 Voby component for billboard.js
 
@@ -7,7 +7,7 @@ Voby component for billboard.js
 ```bash
 # Install billboard.js together if you don't have it already
 $ pnpm install billboard.js
-$ pnpm install woby-billboard
+$ pnpm install @woby/billboard
 ```
 
 ## How to use

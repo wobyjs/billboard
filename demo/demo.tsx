@@ -74,7 +74,7 @@ function App() {
                 }}
                 /* When class name doesn't contains `bb`,
                    then you also need to update the default CSS to be rendered correctly. */
-                className={"bb my-classname"} />
+                class={"bb my-classname"} />
             <button onClick={() => value(v => v * 2)}>change value</button >
             <button onClick={() => test(!test())}>change options</button >
 
@@ -90,7 +90,7 @@ function App() {
                 }}
                 /* When class name doesn't contains `bb`,
                    then you also need to update the default CSS to be rendered correctly. */
-                className={"bb my-classname"} />
+                class={"bb my-classname"} />
         </>
     )
 }

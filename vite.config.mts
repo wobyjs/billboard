@@ -7,7 +7,7 @@ const config = defineConfig({
         minify: false,
         lib: {
             entry: ["./src/index.tsx"],
-            name: "woby-chart",
+            name: "@woby/chart",
             formats: ['es', 'cjs'/*, 'umd'*/],
             fileName: (format: string, entryName: string) => `${entryName}.${format}.js`
         },
